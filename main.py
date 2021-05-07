@@ -76,7 +76,7 @@ elif page == "Neural Network Model":
 
     st.write("""### Apply Deep Learning Neural Network Model To Analyze Senate Dataset!""")
     #st.write("<h3 style='text-align: center; color: white;'>Apply Neural Network Model to analyze Total Votes Of Senate Dataset!-\nline.</h3>", unsafe_allow_html=True)
-    st.write("""#### Note: y = df['totalvotes'].values and The training model can be viewed in Terminal.\n""")
+    st.write("""#### Note: Prediction (y = totalvotes): Target variable that will be predicted by the features.\n""")
     widget1 = st.empty()
     widget1.write("<h3 style='text-align: center; color: red;'>Testing In Progress...</h3>", unsafe_allow_html=True)
     #st.write("""### Testing In Progress...""")
