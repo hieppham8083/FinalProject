@@ -31,7 +31,7 @@ def map():
         #webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html')
        
     if col2.button('Georgia Counties Population Map'):
-        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html')
+        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html', new=1)
         
 def DEM_vs_REP():
     #fig, ax = plt.subplots()
