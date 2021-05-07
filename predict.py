@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd 
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV, train_test_split
-from simple_colors import *
 from tabulate import tabulate
 
 def model(state, year, candidatevotes, totalvotes):
