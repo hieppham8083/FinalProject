@@ -7,7 +7,7 @@ from Senate import *
 #from Swingstates import *
 from Georgia import *
 from NN import *
-from selenium import webdriver
+#from selenium import webdriver
 import numpy as np 
 import warnings
 warnings.filterwarnings("ignore")
