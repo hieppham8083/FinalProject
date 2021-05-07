@@ -18,7 +18,7 @@ import os
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "FEC", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
+page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
 
 if page == "Predict Senate":
     show_predict()
