@@ -26,8 +26,9 @@ def map():
     import webbrowser
     col1, col2 = st.beta_columns(2)
     if col1.button('Georgia Counties Votes Map'):
+        url = 'https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html'
+        webbrowser.open_new_tab(url)
         #webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html')
-        st.markdown("![Testing In Progress](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html)")
        
     if col2.button('Georgia Counties Population Map'):
         webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html')
