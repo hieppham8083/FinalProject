@@ -26,10 +26,10 @@ def map():
     import webbrowser
     col1, col2 = st.beta_columns(2)
     if col1.button('Georgia Counties Votes Map'):
-        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html', new=0)
+        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html')
        
     if col2.button('Georgia Counties Population Map'):
-        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html', new=0)
+        webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html')
         
 def DEM_vs_REP():
     #fig, ax = plt.subplots()
