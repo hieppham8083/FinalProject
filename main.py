@@ -22,13 +22,6 @@ page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "FE
 
 if page == "Predict Senate":
     show_predict()
-'''
-elif page == "FEC":
-    st.title("Federal Election Commission")
-    Payee()
-    Report()
-    Category()
-'''
     
 elif page == "EPI":
     st.title("Elections Performance Index")
