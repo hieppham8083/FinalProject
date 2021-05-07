@@ -8,7 +8,7 @@ from simple_colors import *
 from tabulate import tabulate
 
 def model(state, year, candidatevotes, totalvotes):
-    df = pd.read_csv('senate.csv')
+    df = pd.read_csv('../main//Resources/senate.csv')
     df = df.dropna()
     df= df[df['Results'] != 0]
     df.rename(columns = {'party_simplified' : 'winning_party'},inplace = True)  
