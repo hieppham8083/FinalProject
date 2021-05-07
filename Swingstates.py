@@ -32,7 +32,7 @@ def load_data2():
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("swing_State_dataset.csv")
+    df = pd.read_csv("swing_state_dataset.csv")
     return df
 
 df5 = load_data2()
