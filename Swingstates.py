@@ -22,7 +22,7 @@ list_years = list(list_years)
 @st.cache #avoid to load csv again
 def load_data2():
     global list_years
-    df = pd.read_csv("../main//Resources/state_race.csv")
+    df = pd.read_csv("state_race.csv")
     df[['Population']] = df[['Population']] .replace('[\,,]','',regex=True).astype(int)
     #years = [int(x) for x in input("Enter a list of year[2010 2015 2019] to test: ").split()]
     #years = list_years
@@ -32,7 +32,7 @@ def load_data2():
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("../main//Resources/swing_State_dataset.csv")
+    df = pd.read_csv("swing_State_dataset.csv")
     return df
 
 df5 = load_data2()
