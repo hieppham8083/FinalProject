@@ -64,7 +64,7 @@ def nn_2layers():
         # compile the model using the "adam" optimizer and "mean_squared_error" loss function
         nn.compile(loss='mean_squared_error' , optimizer='adam' , metrics=['mse'])
         # train the model for 100 epoch
-        model = nn.fit(X_train_scaled, y_train, epochs=2)
+        model = nn.fit(X_train_scaled, y_train, epochs=50)
         # predict values for the train and test sets
         y_train_pred = nn.predict(X_train_scaled)
         y_test_pred = nn.predict(X_test_scaled)
