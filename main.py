@@ -4,7 +4,7 @@ from predict import *
 from epi import *
 from Senate import *
 #from swing_states import *
-#from Swingstates import *
+from Swingstates import *
 from Georgia import *
 from NN import *
 #from selenium import webdriver
@@ -43,9 +43,9 @@ elif page == "Swing States":
     #slide()
     #swing_states()
     #Race_population()
-    #Contributions()
-    # Margin()
-    exec(open("Swingstates.py").read())
+    Contributions()
+    Margin()
+    #exec(open("Swingstates.py").read())
    
 elif page == "Georgia":
     st.title("Georgia election results")
