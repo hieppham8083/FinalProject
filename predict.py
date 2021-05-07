@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd 
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV, train_test_split
-from tabulate import tabulate
+#from tabulate import tabulate
 
 def model(state, year, candidatevotes, totalvotes):
     df = pd.read_csv('../main//Resources/senate.csv')
