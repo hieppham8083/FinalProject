@@ -86,32 +86,7 @@ def Facts():
     plt.title('Quick Facts Comparison')
     st.pyplot()
 
-def map2():
-    from urllib.request import urlopen
-    import plotly as py
-    import json
-    import plotly.express as px
-    fig, ax = plt.subplots()
-    with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
-        counties = json.load(response)
-    #geojson = px.data.election_geojson()
-    #df = counties_fips_color[(counties_fips_color["state_code"] == "GA") | (counties_fips_color["state_code"] == "FL")]
-    states = ['GA', 'SC', 'FL']
-    df = df2[df2["state_code"].isin(states)]
-    #df = counties_fips_color[counties_fips_color["state_code"].isin(states)]
-    #df = counties_fips_color
-    fig = px.choropleth(df, geojson=counties, locations='fips', color='color',
-                                scope="usa",
-                            
-                            hover_data=["state","county", "candidate", "total_votes"])
-    fig.update_geos(
-                #lonaxis_range=[20, 380],
-                projection_scale=2.7,
-                center=dict(lat=31, lon=-83),
-                visible=True)                      
-    fig.update_layout(title= {"text": "Georgia vs South Carolina & Florida", "xanchor": "center", "x": 0.5, "y": 0.95}, 
-        margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
-    st.pyplot(fig)
+
 
 
 
