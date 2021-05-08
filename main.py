@@ -73,7 +73,7 @@ elif page == "Neural Network Model":
     #widget2.markdown("![Testing In Progress](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/test.gif)")
     result = epi_nn()
     if result:
-        widget1.empty()
+        widget1.write("""## Training Model is done!""")
         widget2 = st.empty()
         st.write("""### Training Model is done!""")
    
