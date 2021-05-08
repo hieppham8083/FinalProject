@@ -20,7 +20,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("epi.csv")
+    df = pd.read_csv("./Resources/epi.csv")
     df = df.drop(['state_abbv', 'state_fips','year', 'website_pollingplace', 'website_reg_status', 'website_precinct_ballot', 'website_absentee_status', 'website_provisional_status', 'online_reg', 'residual'],axis=1)
     df = df.fillna(0)
     return df
