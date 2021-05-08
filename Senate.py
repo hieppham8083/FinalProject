@@ -9,12 +9,12 @@ import seaborn as sns
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("CostOfElection.csv")
+    df = pd.read_csv("./Resources/CostOfElection.csv")
     return df
 
 @st.cache #avoid to load csv again
 def load_data2():
-    df = pd.read_csv("senate.csv")
+    df = pd.read_csv("./Resources/senate.csv")
     return df
 
 df = load_data()
