@@ -7,7 +7,7 @@ from sklearn.model_selection import RandomizedSearchCV, train_test_split
 #from tabulate import tabulate
 
 def model(state, year, candidatevotes, totalvotes):
-    df = pd.read_csv('senate.csv')
+    df = pd.read_csv('./Resources/senate.csv')
     df = df.dropna()
     df= df[df['Results'] != 0]
     df.rename(columns = {'party_simplified' : 'winning_party'},inplace = True)  
