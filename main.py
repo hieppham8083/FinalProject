@@ -79,7 +79,7 @@ elif page == "Neural Network Model":
     st.write("""#### Note: Prediction (y = totalvotes): Target variable that will be predicted by the features.\n""")
     widget1 = st.empty()
     widget1.write("<h3 style='text-align: center; color: red;'>Testing In Progress...</h3>", unsafe_allow_html=True)
-    #st.write("""### Testing In Progress...""")
+    #st.write("""### Testing In Progress...Will be done in 7 mins!""")
     widget2 = st.empty()
     widget2.markdown("![Testing In Progress](https://i.pinimg.com/originals/aa/8d/93/aa8d93e1023e43a1c1c2d04951854f53.gif)")
     #image2()
