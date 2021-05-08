@@ -17,20 +17,11 @@ warnings.filterwarnings("ignore")
 from sklearn import metrics
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-
-@st.cache #avoid to load csv again
-def load_data():
-    df = pd.read_csv("./Resources/epi.csv")
-    df = df.drop(['state_abbv', 'state_fips','year', 'website_pollingplace', 'website_reg_status', 'website_precinct_ballot', 'website_absentee_status', 'website_provisional_status', 'online_reg', 'residual'],axis=1)
-    df = df.fillna(0)
-    return df
-
-df = load_data()
-
-
-def epi_nn():
-    global df
+def epi_nn(): 
     try:
+        df = pd.read_csv("./Resources/epi.csv")
+        df = df.drop(['state_abbv', 'state_fips','year', 'website_pollingplace', 'website_reg_status', 'website_precinct_ballot', 'website_absentee_status', 'website_provisional_status', 'online_reg', 'residual'],axis=1)
+        df = df.fillna(0)
         X = df.drop(['vep_turnout'],axis=1)
         y = df['vep_turnout'].values
         #splitting Train and Test 
@@ -111,7 +102,7 @@ def epi_nn():
         st.pyplot(fig)
         return result
     except:
-        break
+        pass
 
 #epi_nn()
 
