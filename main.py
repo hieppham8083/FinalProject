@@ -8,7 +8,6 @@ from Senate import *
 from Georgia import *
 #from NN import *
 from NeuralNetwork import *
-from selenium import webdriver
 import numpy as np 
 import warnings
 warnings.filterwarnings("ignore")
