@@ -72,14 +72,13 @@ elif page == "Neural Network Model":
     widget2 = st.empty()
     widget2.markdown("")
     result = epi_nn()
-    if result:
+    if result < 0.88: 
+        widget1.write("<h3 style='text-align: center; color: red;'>r2_score is low! Please increase hidden layer to improve Performance.</h3>", unsafe_allow_html=True)
+        widget2.write(f"<h3 style='text-align: center; color: red;'>r2_score = {result}</h3>", unsafe_allow_html=True)
+    else:
         widget1.write("<h3 style='text-align: center; color: blue;'>Training Model is done!</h3>", unsafe_allow_html=True)
-        #widget2.write(f"""#### r2_score = {result}""")
-        if result < 0.88: 
-            widget2.write(f"<h3 style='text-align: center; color: red;'>r2_score = {result}</h3>", unsafe_allow_html=True)
-        else:
-            widget2.write(f"<h3 style='text-align: center; color: blue;'>r2_score = {result}</h3>", unsafe_allow_html=True)
-        st.write("""### Training Model is done!""")
+        widget2.write(f"<h3 style='text-align: center; color: blue;'>r2_score = {result}</h3>", unsafe_allow_html=True)
+    st.write("""### Training Model is done!""")
    
     
 
