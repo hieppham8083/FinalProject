@@ -34,7 +34,7 @@ def map2():
     if col2.button('Georgia Counties Population Map'):
         webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html', new=1)
 def map():
-    st.write("[Georgia Counties Votes Map](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html)",st.text(". ") 
+    st.write("[Georgia Counties Votes Map](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html)",[         ] 
              "[Georgia Counties Population Map](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html)")
    
          
