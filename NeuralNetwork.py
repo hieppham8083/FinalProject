@@ -111,7 +111,7 @@ def epi_nn():
         st.pyplot(fig)
         return result
     except:
-        pass
+        break
 
 #epi_nn()
 
