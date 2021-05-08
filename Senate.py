@@ -61,7 +61,7 @@ def party_history():
 
 def image(): 
     from PIL import Image
-    image = Image.open('Resources\Senate_Election_Map.png')
+    image = Image.open('./Resources/Senate_Election_Map.png')
     st.image(image, caption='2022 Senate Election Interactive Map',use_column_width=True)
 
 
