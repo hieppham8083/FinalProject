@@ -1,6 +1,6 @@
 import streamlit as st
 from predict import *
-from fec import *
+#from fec import *
 from epi import *
 from Senate import *
 #from swing_states import *
@@ -20,7 +20,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "FEC", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
+page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
 
 if page == "Predict Senate":
     show_predict()
