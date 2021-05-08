@@ -70,11 +70,11 @@ elif page == "Neural Network Model":
     widget1 = st.empty()
     widget1.write("<h3 style='text-align: center; color: red;'>Testing In Progress...</h3>", unsafe_allow_html=True)
     widget2 = st.empty()
-    #widget2.markdown("![Testing In Progress](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/test.gif)")
+    widget2.markdown("")
     result = epi_nn()
     if result:
         widget1.write("<h3 style='text-align: center; color: blue;'>Training Model is done!</h3>", unsafe_allow_html=True)
-        widget2 = st.empty()
+        widget2.write(f"""#### r2_score = {result}""")
         st.write("""### Training Model is done!""")
    
     
