@@ -64,7 +64,7 @@ elif page == "Georgia":
    
 elif page == "Neural Network Model":
   
-    st.write("""### Percentage Of Vote Turnout Prediction Using Deep Learning Neural Network Model!""")
+    st.write("""### Vote Turnout Prediction Using Deep Learning Neural Network Model!""")
     #st.write("<h3 style='text-align: center; color: white;'>Apply Neural Network Model to analyze Total Votes Of Senate Dataset!-\nline.</h3>", unsafe_allow_html=True)
     st.write("""#### Prediction (y = vep_turnout): Target variable that will be predicted by the input.\n\n""")
     widget1 = st.empty()
