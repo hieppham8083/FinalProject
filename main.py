@@ -71,13 +71,11 @@ elif page == "Neural Network Model":
     widget1.write("<h3 style='text-align: center; color: red;'>Testing In Progress...</h3>", unsafe_allow_html=True)
     widget2 = st.empty()
     #widget2.markdown("![Testing In Progress](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/test.gif)")
-    try:
-        result = epi_nn()
-        if result:
-            widget1.empty()
-            widget2 = st.empty()
-            st.write("""### Training Model is done!""")
-    except:
-        pass
+    result = epi_nn()
+    if result:
+        widget1.empty()
+        widget2 = st.empty()
+        st.write("""### Training Model is done!""")
+   
     
 
