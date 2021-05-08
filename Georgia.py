@@ -11,12 +11,12 @@ import webbrowser
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("Georgia_dataset.csv")
+    df = pd.read_csv("./Resources/Georgia_dataset.csv")
     return df
 
 @st.cache #avoid to load csv again
 def load_data2():
-    df = pd.read_csv("president_counties.csv")
+    df = pd.read_csv("./Resources/president_counties.csv")
     return df
 
 df = load_data()
