@@ -74,7 +74,11 @@ elif page == "Neural Network Model":
     result = epi_nn()
     if result:
         widget1.write("<h3 style='text-align: center; color: blue;'>Training Model is done!</h3>", unsafe_allow_html=True)
-        widget2.write(f"""#### r2_score = {result}""")
+        #widget2.write(f"""#### r2_score = {result}""")
+        if result < 0.9: 
+            widget2.write(f"<h3 style='text-align: center; color: red;'>r2_score = {result}</h3>", unsafe_allow_html=True)
+        else:
+            widget2.write(f"<h3 style='text-align: center; color: blue;'>r2_score = {result}</h3>", unsafe_allow_html=True)
         st.write("""### Training Model is done!""")
    
     
