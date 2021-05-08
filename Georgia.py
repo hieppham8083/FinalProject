@@ -22,7 +22,7 @@ def load_data2():
 df = load_data()
 df2 = load_data2()
 
-def map():
+def map2():
     import webbrowser
     col1, col2 = st.beta_columns(2)
     if col1.button('Georgia Counties Votes Map'):
@@ -32,7 +32,10 @@ def map():
        
     if col2.button('Georgia Counties Population Map'):
         webbrowser.open('https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html', new=1)
-        
+def map():
+    st.write("[Georgia Counties Votes Map](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Total+Votes.html)")
+    st.write("[Georgia Counties Population Map](https://hieppham.s3.us-east-2.amazonaws.com/Final_project/georgia/Georgia+vs+South+Carolina+Population.html)")
+         
 def DEM_vs_REP():
     #fig, ax = plt.subplots()
     columns = ['year', 'DEM_Rate', 'REP_Rate']
