@@ -25,7 +25,7 @@ def epi_nn():
         X = df.drop(['vep_turnout'],axis=1)
         y = df['vep_turnout'].values
         #splitting Train and Test 
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=101)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
         #standardization scaler - fit&transform on train, fit only on test
         s_scaler = StandardScaler()
         X_train = s_scaler.fit_transform(X_train.astype(np.float))
