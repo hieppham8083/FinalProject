@@ -9,7 +9,7 @@ import seaborn as sns
 
 @st.cache #avoid to load csv again
 def load_data():
-    df = pd.read_csv("senate_dataset.csv")
+    df = pd.read_csv("./Resources/senate_dataset.csv")
     return df
 
 df = load_data()
