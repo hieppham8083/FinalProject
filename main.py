@@ -1,5 +1,6 @@
 import streamlit as st
 from predict import *
+from predict_party import *
 #from fec import *
 from epi import *
 from Senate import *
@@ -19,10 +20,12 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-page = st.sidebar.selectbox("Please select the options:", ("Predict Senate", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
+page = st.sidebar.selectbox("Please select the options:", ("Predict Senate Wining", "Predicts Party Spending", "EPI", "Senate", "Swing States", "Georgia", "Neural Network Model"))
 
-if page == "Predict Senate":
+if page == "Predict Senate Wining":
     show_predict()
+elif page == "Predicts Party Spending":
+    party_predict()
 elif page == "FEC":
     st.title("Federal Election Commission")
     Payee()
