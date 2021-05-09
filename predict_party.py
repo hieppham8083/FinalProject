@@ -11,7 +11,7 @@ def party_predict():
     from sklearn.model_selection import RandomizedSearchCV, train_test_split
     st.title("Party Spending Predictions")
     st.write("""### Please input some information to predict the Party Wining""")
-    df = pd.read_csv('party.csv')
+    df = pd.read_csv('./Resources/party.csv')
     columns = ['year', 'Democrats', 'Republicans', 'winning_party']
     df = df[columns] 
     df[['Democrats', 'Republicans']] = df[['Democrats', 'Republicans']].replace('[\$,]','',regex=True).astype(float)
