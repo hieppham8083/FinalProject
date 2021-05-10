@@ -98,7 +98,7 @@ def Race_population():
     plt.annotate(f"Total population of all 7 Swing States", xy=(0.3, 0.5), fontsize=11, xycoords='axes fraction', bbox=props)
     plt.xlabel('Population (million)')
     plt.ylabel('Race')
-    plt.title('Race By Population')
+    plt.title('Racial breakdown of swing states')
     st.pyplot()
 
 def Contributions():
