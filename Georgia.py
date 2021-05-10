@@ -93,7 +93,7 @@ def Facts():
     df1.plot.barh()
     plt.xlabel('Percentage(%)')
     plt.ylabel('Facts')
-    plt.title('Quick Facts Comparison')
+    plt.title('QDemographic Comparisons')
     st.pyplot()
 
 
