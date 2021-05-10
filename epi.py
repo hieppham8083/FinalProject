@@ -108,7 +108,7 @@ def predict_Turnout():
     ax.xaxis.set_major_formatter(xticks)
     plt.ylabel('State')
     plt.xlabel('VEP Turnout Rate')
-    ax.set_title("Predict Top Ten VEP Turnout By State")
+    ax.set_title("Predict Top Ten VEP Turnout By State in 2020")
     st.pyplot()
 
 
