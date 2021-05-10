@@ -67,10 +67,11 @@ def show_predict():
     ok = st.button("Predict who will win")
     if ok:
         if test_prediction < [1.5]:
-            st.subheader(f"Predicts SENATE DEMOCRAT will win in {state}")
+            #st.subheader(f"Predicts SENATE DEMOCRAT will win in {state}")
+            st.write(f"<h2 style='text-align: center; color: blue;'>*Predicts DEMOCRATS PARTY will win in {state}*</h2>", unsafe_allow_html=True)
         elif test_prediction > [1.5]:
-            st.subheader(f"Predicts SENATE PUBLICAN will win in {state}")
-            
+            #st.subheader(f"Predicts SENATE PUBLICAN will win in {state}")
+            st.write(f"<h2 style='text-align: center; color: red;'>*Predicts REPUBLICANS PARTY will win in {state}*</h2>", unsafe_allow_html=True)
         else:
             st.subheader(f"Predicts Otherwill win in {state}")
         st.write(df)
