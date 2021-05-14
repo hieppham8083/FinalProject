@@ -10,6 +10,6 @@
   - Upload all test results to AWS and link them from the website for dashboard visualization.
   - Transfer all datasets to SQL for database connects to the website and web app.
 - Step 5: Create a website (http://group5.anvil.app)
-  - Deploy machine learning model to the website for predicting the total votes and who will win the elections, also created the dashboard visualization for all the interesting findings. Refer to Our Website for details.
+  - Deploy machine learning model to the website for predicting the total votes and who will win the elections, also created the dashboard visualization for all the interesting findings. Refer to [Our Website](http://group5.anvil.app) for details.
 - Step 6: Create a web app (https://share.streamlit.io/hieppham8083/finalproject/main/main.py)
-  - Furthermore, deploy deep learning NeuralNetwork model to analyze vote turn out from Elections Performance Index Dataset and directly plot all the graphs on the web app. Refer to Our WebApp for details.
+  - Furthermore, deploy deep learning NeuralNetwork model to analyze vote turn out from Elections Performance Index Dataset and directly plot all the graphs on the web app. Refer to [Our WebApp](https://share.streamlit.io/hieppham8083/finalproject/main/main.py) for details.
