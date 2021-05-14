@@ -1,11 +1,10 @@
 # Individual Self Assessment Deliverable
-[Click To View Final Project WebApp](https://share.streamlit.io/hieppham8083/finalproject/main/main.py)
 
 ## Elections Analysis Step by Step:
 - Step 1: Clean all datasets and put them in test folder.
 - Step 2: Create 1st python script (FinalProject.py)
   - From the clean data, in CSV form, to analyzing that data through graphs. Each different test gives you a list of command options to perform to all the interesting findings. Using python is the far more automated, and faster overall processing time.
-- Step 3: Create 2nd python script (AutoTest.py)
+- Step 3: Create 2nd python script ([AutoTest.py](https://github.com/hieppham8083/FinalProject/blob/main/FinalProjects.py))
   - We went one step further and integrated all of our tests into a single script that runs through a properly-formatted folder full of validation data, analyzes all of them, and puts all pertinent results in a specific Results folder for the teammates to review.
 - Step 4: Create 3rd python script (DataFrame_to_SQL.ipynb)
   - Upload all test results to AWS and link them from the website for dashboard visualization.
